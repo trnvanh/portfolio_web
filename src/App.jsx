@@ -62,7 +62,7 @@ function App() {
         <p className="site-instructions">
           Click the center of a Rubik’s Cube face to navigate thru sections.
           <br />
-          Use your mouse to rotate and resize the cube. Use keyboard keys (QWER/ASDF/ZXCV) to spin sides!
+          Use your mouse to rotate (click and move the mouse) and resize the cube. Use keyboard keys (QWER/ASDF/ZXCV) to spin sides!
         </p>
 
       </header>

@@ -1,7 +1,7 @@
 .app-container {
   width: 100%;
   height: 100vh;
-  background: #EBCB90; /* dark retro background */
+  background: #EBCB90; 
   color: #fff;
   font-family: "Press Start 2P", monospace;
   display: flex;
@@ -18,15 +18,15 @@
 .site-title {
   font-size: 28px;
   margin: 0;
-  color: #ff00aa; 
-  text-shadow: 2px 2px #000, 0 0 10px #ff00aa;
+  color: #F75270; 
+  text-shadow: 2px 2px #000, 0 0 10px #F75270;
 }
 
 .site-tagline {
   font-size: 12px;
   margin: 8px 0 20px;
-  color: #00ffff;
-  text-shadow: 1px 1px #000, 0 0 8px #00ffff;
+  color: #6A9C89;
+  text-shadow: 1px 1px #000, 0 0 8px #6A9C89;
 }
 
 .site-instructions {
