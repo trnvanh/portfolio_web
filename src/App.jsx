@@ -1,7 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Rubik from "./components/RubiksCube";
+
 import RetroWindow from "./components/Window";
 import "./App.css";
 
@@ -26,6 +27,7 @@ function App() {
   const [windows, setWindows] = useState([]); // use array to track active windows
   const [zCounter, setZCounter] = useState(1); // when clicking on a window, it comes forward = it gets the highest z-index
   const [currentFace, setCurrentFace] = useState(null);
+  const rubikRef = useRef(); // ref to the rubik for scramble, solve and reward
 
   const handleOpenWindow = (sectionKey) => {
     // Allow multiple windows (don’t overwrite previous ones)
@@ -80,14 +82,13 @@ function App() {
         <OrbitControls />
 
         {/* Rubik component communicates clicks upward */}
-        <Rubik onFaceClick={handleOpenWindow} onFaceChange={(section) => setCurrentFace(section)} />
+        <Rubik ref={rubikRef} onFaceClick={handleOpenWindow} onFaceChange={(section) => setCurrentFace(section)} />
       </Canvas>
 
-      {currentFace && (
-        <p>
-          {currentFace.label}
-        </p>
-      )}
+      <div className="game-controls">
+        <button onClick={() => rubikRef.current.scrambleCube()}>Scramble</button>
+        <button onClick={() => rubikRef.current.solveCube()}>Solve</button>
+      </div>
 
       {/* Window (site section) */}
       {windows.map((w) => {
