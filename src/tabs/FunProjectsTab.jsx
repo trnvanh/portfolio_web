@@ -31,6 +31,28 @@ const projects = [
             },
         },
     },
+    {
+        title: "SkyCast",
+        description:
+            `SkyCast is a modern, visually appealing weather application that provides real-time weather updates, forecasts, and personalized recommendations
+             for users. The app is designed to help users stay prepared for daily weather conditions, with intuitive UI and interactive features. This is my 
+             first practice app to learn Swift.`,
+        role: ["Full-stack Dev", "UI/UX Designer"],
+        done: [
+            "Design UI/UX",
+            "Frontend Developing",
+            "Backend Developing",
+        ],
+        tech: ["Swift", "SwiftUI"],
+        attachments: {
+            link: {
+            GitHub: "https://github.com/trnvanh/weather_app",
+            },
+            media: {
+            gif: "/media/skycast/Weather.gif",
+            },
+        },
+    },
 ]
 
 export default function FunProjectsTab() { 
