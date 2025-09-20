@@ -71,7 +71,7 @@ export default function UiUxProjectsTab() {
               Report: "https://tuni-my.sharepoint.com/:w:/g/personal/anh_v_tran_tuni_fi/Edtsut4j7wZImvHeA4bhRsgBdqoqyJiDMhrq1Y-TZ9ob1w?e=zTzcEf"
               },
               media: {
-              gif: "/media/skycast/Paravolt.gif",
+              gif: "/media/paravolt/Paravolt.gif",
               },
           },
         },
