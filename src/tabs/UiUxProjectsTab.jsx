@@ -52,6 +52,51 @@ export default function UiUxProjectsTab() {
                 },
             },
         },
+        {
+          title: "Paravolt",
+          description:
+              `Paravolt is a mobile app concept that makes EV charging effortless. 
+              It helps drivers find, book, and pay for charging stations while reducing range anxiety through real-time availability updates, route planning, and cost transparency. 
+              The app also syncs with the car to provide energy usage statistics, expense tracking, and eco-impact insights—turning EV ownership into a seamless and stress-free experience.`,
+          role: ["UI/UX Researcher", "UI/UX Designer"],
+          done: [
+              "Design low-fi wireframes and hi-fi prototype UI/UX with Figma",
+              "Market research",
+              "Persona",
+          ],
+          tech: ["Figma", "Canva"],
+          attachments: {
+              link: {
+              Figma: "https://www.figma.com/design/dzV0ocoas08ebta8KkJdg8/PARAVOLT?node-id=0-1&t=3zMRSk2J5BGikZN0-1",
+              Report: "https://tuni-my.sharepoint.com/:w:/g/personal/anh_v_tran_tuni_fi/Edtsut4j7wZImvHeA4bhRsgBdqoqyJiDMhrq1Y-TZ9ob1w?e=zTzcEf"
+              },
+              media: {
+              gif: "/media/skycast/Paravolt.gif",
+              },
+          },
+        },
+        {
+          title: "Skycast",
+          description:
+              `SkyCast is a modern, visually appealing weather application that provides real-time weather updates, forecasts, and personalized recommendations
+              for users. The app is designed to help users stay prepared for daily weather conditions, with intuitive UI and interactive features. This is my 
+              first practice app to learn Swift.`,
+          role: ["Full-stack Dev", "UI/UX Designer"],
+          done: [
+              "Design UI/UX",
+              "Frontend Developing",
+              "Backend Developing",
+          ],
+          tech: ["Swift", "SwiftUI"],
+          attachments: {
+              link: {
+              GitHub: "https://github.com/trnvanh/weather_app",
+              },
+              media: {
+              gif: "/media/skycast/Weather.gif",
+              },
+          },
+        },
     ]
 
     return (
